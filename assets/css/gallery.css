@@ -1,3 +1,4 @@
+/* frist section of the page contain image and text */
 .site-heading {
   margin-bottom: 50px;
   position: relative;
@@ -21,6 +22,10 @@
 .site-heading p {
   margin-top: 15px;
 }
+
+/*-----------------------------------------------------------------------------------------*/
+
+/* filter buttons style */
 .filter-btns {
   text-align: center;
   margin-bottom: 30px;
@@ -42,6 +47,11 @@
   color: #fff;
   background: var(--main-color);
 }
+
+/*-----------------------------------------------------------------------------------------*/
+
+/* image cart style */
+
 .collection-item {
   position: relative;
   width: 100%;
@@ -94,3 +104,4 @@ img.lazy {
   background-repeat: no-repeat;
   background-size: contain;
 }
+/*-----------------------------------------------------------------------------------------*/

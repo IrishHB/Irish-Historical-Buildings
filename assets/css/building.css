@@ -1,4 +1,4 @@
-/* Banner */
+/* building-banner */
 .building .building-banner {
   height: 350px;
   width: 100%;
@@ -26,6 +26,9 @@
   color: #fff;
   text-align: center;
 }
+/*-----------------------------------------------------------------------------------------*/
+
+/* location iframe */
 .building .location-iframe {
   position: relative;
   max-width: 100%;
@@ -35,6 +38,9 @@
 .building .location-iframe iframe {
   max-width: 100%;
 }
+/*-----------------------------------------------------------------------------------------*/
+
+/* video */
 .building .video-wrapper {
   text-align: center;
 }
@@ -43,22 +49,16 @@
   max-width: 600px;
   height: auto;
 }
+/*-----------------------------------------------------------------------------------------*/
+
+/* page content */
+/* roperty lets you reflect the content of an element in one specific direction. */
 .cta-one__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-@media (max-width: 480px) {
-  .cta-one__block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
-}
+
 .cta-one__title {
   font-size: 36px;
   line-height: 49px;
@@ -67,22 +67,14 @@
   margin-top: -10px;
   margin-bottom: 20px;
 }
-@media (max-width: 480px) {
-  .cta-one__title {
-    font-size: 30px;
-  }
-}
+
 .cta-one__text {
   margin: 0;
   font-size: 16px;
   line-height: 26px;
   color: #777777;
 }
-@media (max-width: 1199px) {
-  .cta-one__text br {
-    display: none;
-  }
-}
+
 .cta-one__list {
   margin: 0;
   margin-top: 25px;
@@ -159,17 +151,49 @@
 .cta-one__donation-page .cta-one__link {
   margin-top: 40px;
 }
+
+.cta-one__membership-page {
+  background-color: #fff;
+  background-image: none;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/* page content in phone */
+@media (max-width: 480px) {
+  .cta-one__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-one__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .cta-one__text br {
+    display: none;
+  }
+}
+
 @media (max-width: 991px) {
   .cta-one__donation-page .img-fluid {
     margin-top: 50px;
   }
 }
-.cta-one__membership-page {
-  background-color: #fff;
-  background-image: none;
-}
+
 @media (max-width: 991px) {
   .cta-one__membership-page .img-fluid {
     margin-top: 50px;
   }
 }
+
+/*-----------------------------------------------------------------------------------------*/
